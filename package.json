@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "description": "Claude-powered travel agent website with a floating terminal widget",
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.111.0"
+    "@anthropic-ai/sdk": "^0.111.0",
+    "@vercel/blob": "^2.6.1",
+    "dotenv": "^17.4.2"
   }
 }

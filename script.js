@@ -59,6 +59,13 @@
       text: "Preferred flight class? (economy, premium economy, business, no preference) ",
       required: false,
     },
+    {
+      key: "policy_questions",
+      text:
+        "Any cancellation, baggage, or travel insurance questions I should " +
+        "answer? (optional) ",
+      required: false,
+    },
   ];
 
   const output = document.getElementById("widget-output");
