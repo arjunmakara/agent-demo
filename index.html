@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wayfare &mdash; AI Travel Agent</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-brand">✈ Wayfare</div>
+  </header>
+
+  <main class="hero">
+    <h1>Plan your next trip with Claude.</h1>
+    <p>
+      Answer a handful of questions and get destination picks, flight
+      guidance, and a day-by-day outline &mdash; built for your budget,
+      dates, and travel style.
+    </p>
+    <button id="launch-btn" class="cta">Plan My Trip</button>
+  </main>
+
+  <footer class="footer">
+    <p>Recommendations are AI-generated guidance, not bookable quotes.</p>
+  </footer>
+
+  <!-- Floating launcher (visible once the widget has been closed) -->
+  <button id="launcher" class="launcher" aria-label="Open travel agent" hidden>
+    ✈
+  </button>
+
+  <!-- Floating terminal-style widget -->
+  <section id="widget" class="widget" hidden>
+    <div id="widget-header" class="widget-header">
+      <div class="widget-dots">
+        <span class="dot dot-red"></span>
+        <span class="dot dot-yellow"></span>
+        <span class="dot dot-green"></span>
+      </div>
+      <div class="widget-title">agent-demo2.py &mdash; Travel Agent</div>
+      <button id="widget-close" class="widget-close" aria-label="Close">×</button>
+    </div>
+    <div id="widget-output" class="widget-output"></div>
+    <form id="widget-form" class="widget-input-row">
+      <span class="prompt-caret">&gt;</span>
+      <input
+        id="widget-input"
+        class="widget-input"
+        type="text"
+        autocomplete="off"
+        placeholder="Type your answer and press Enter&hellip;"
+      />
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
