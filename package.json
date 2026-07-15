@@ -1,0 +1,9 @@
+{
+  "name": "agent-demo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Claude-powered travel agent website with a floating terminal widget",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.111.0"
+  }
+}
