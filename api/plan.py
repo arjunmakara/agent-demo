@@ -83,6 +83,15 @@ class handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
+    def do_GET(self):
+        self._send_json(
+            200,
+            {
+                "status": "ok",
+                "message": "This endpoint accepts POST with trip details as JSON.",
+            },
+        )
+
     def do_POST(self):
         try:
             length = int(self.headers.get("Content-Length", 0) or 0)
